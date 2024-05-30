@@ -3,7 +3,7 @@ on:
     types: [created]
 jobs:
   magicword:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     if: contains( '\
       jack,\
       jack,\
