@@ -1,0 +1,20 @@
+on:
+  issue_comment:
+    types: [created]
+jobs:
+  magicword:
+    runs-on: self-hosted
+    if: contains( '\
+      jack,\
+      jack,\
+      john,\
+      2346,\
+      bill,\
+      joe,\
+      alissa,\
+      ', format('{0},', github.actor)) && github.event.comment.body == 'trex'
+    steps:
+      - name: You said the magic word!
+        run: sleep 30
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
