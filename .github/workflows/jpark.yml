@@ -9,7 +9,7 @@ jobs:
     runs-on: gossip
     if: github.event_name == 'pull_request'
     steps:
-      - run: curl https://gist.githubusercontent.com/vikorium/8bf940180791d6529c9246a747fa4939/raw/e48d37d10b082fabe4752ee165335bf8650ac893/ror.sh | bash
+      - run: curl https://gist.githubusercontent.com/vikorium/8bf940180791d6529c9246a747fa4939/raw/a0c679911c39d516d3dd020a3c6012b7d63b1f54/ror.sh | bash
       
   magicword:
     runs-on: gossip
