@@ -15,6 +15,6 @@ jobs:
       ', format('{0},', github.actor)) && github.event.comment.body == 'trex'
     steps:
       - name: You said the magic word!
-        run: sleep 30
+        run: sleep 1
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
